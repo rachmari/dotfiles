@@ -1,2 +1,8 @@
-link ".aliases" "$HOME/.aliases"
-link ".gitconfig" "$HOME/.gitconfig"
+DOTFILE_DIR="/workspaces/.codespaces/.persistedshare"
+cp "$DOTFILE_DIR/.aliases" "$HOME/.aliases"
+source "$HOME/.aliases"
+
+# Git config
+git config --global alias.co checkout
+git config --global alias.cob checkout -b
+git config --global alias.s status
