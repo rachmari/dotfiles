@@ -1,6 +1,7 @@
 DOTFILE_DIR="/workspaces/.codespaces/.persistedshare/dotfiles"
 cat "$DOTFILE_DIR/.aliases" >> "$HOME/.aliases"
-source "$HOME/.aliases"
+# cat "$DOTFILE_DIR/.bash_profile" >> "$HOME/.bash_profile"
+cat "source $HOME/.aliases" >> "$HOME/.bashrc"
 
 # Git config
 git config --global alias.co checkout
