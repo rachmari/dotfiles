@@ -1,4 +1,4 @@
-DOTFILE_DIR="/workspaces/.codespaces/.persistedshare"
+DOTFILE_DIR="/workspaces/.codespaces/.persistedshare/dotfiles"
 cat "$DOTFILE_DIR/.aliases" >> "$HOME/.aliases"
 source "$HOME/.aliases"
 
