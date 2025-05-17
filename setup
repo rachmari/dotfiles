@@ -1,2 +1,2 @@
-link "~/.aliases" "$HOME/.aliases"
-link "~/.gitconfig" "$HOME/.gitconfig"
+link ".aliases" "$HOME/.aliases"
+link ".gitconfig" "$HOME/.gitconfig"
