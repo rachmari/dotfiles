@@ -1,6 +1,2 @@
-exec > >(tee -i $HOME/dotfiles_install.log)
-exec 2>&1
-set -x
-
 link "~/.aliases" "$HOME/.aliases"
 link "~/.gitconfig" "$HOME/.gitconfig"
