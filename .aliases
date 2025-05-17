@@ -1,5 +1,7 @@
+# kill hanging ports
 alias lsportid='function _lsofport() { lsof -i :$1; }; _lsofport'
 alias killp='function _killp() { kill -9 $1; }; _killp'
 
-# Reminder docs
-alias ccr='echo -e "- script/setup-codespaces-copilot-api -w \n- script/setup-copilot-code-review"'
+# codespace setup
+alias setup-ccr='script/setup-codespaces-copilot-api -w'
+alias seed-ccr='script/setup-copilot-code-review'
