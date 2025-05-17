@@ -1,9 +1,10 @@
-DOTFILE_DIR="/workspaces/.codespaces/.persistedshare/dotfiles"
-cat "$DOTFILE_DIR/.aliases" >> "$HOME/.aliases"
-# cat "$DOTFILE_DIR/.bash_profile" >> "$HOME/.bash_profile"
-cat "source $HOME/.aliases" >> "$HOME/.bashrc"
+if ("$CODESPACES" == "true") then
+  DOTFILE_DIR="/workspaces/.codespaces/.persistedshare/dotfiles"
+  cat "$DOTFILE_DIR/.aliases" >> "$HOME/.aliases"
+  echo "source $HOME/.aliases" >> "$HOME/.bashrc"
 
-# Git config
-git config --global alias.co checkout
-git config --global alias.cob checkout -b
-git config --global alias.s status
+  # Git config
+  git config --global alias.co checkout
+  git config --global alias.cob checkout -b
+  git config --global alias.s status
+fi
