@@ -1,5 +1,5 @@
 DOTFILE_DIR="/workspaces/.codespaces/.persistedshare"
-cp "$DOTFILE_DIR/.aliases" "$HOME/.aliases"
+cat "$DOTFILE_DIR/.aliases" >> "$HOME/.aliases"
 source "$HOME/.aliases"
 
 # Git config
