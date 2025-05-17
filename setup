@@ -1,2 +1,2 @@
-source ~/.aliases
-export GIT_CONFIG_GLOBAL=~/.gitconfig
+link "~/.aliases" "$HOME/.aliases"
+link "~/.gitconfig" "$HOME/.gitconfig"
