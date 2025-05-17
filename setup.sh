@@ -1,1 +1,3 @@
 source ~/.aliases
+export GIT_CONFIG_GLOBAL=~/.gitconfig
+
