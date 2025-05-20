@@ -1,3 +1,6 @@
+# docs
+alias a='cat ~/.aliases'
+
 # kill hanging ports
 alias lsportid='function _lsofport() { lsof -i :$1; }; _lsofport'
 alias killp='function _killp() { kill -9 $1; }; _killp'
