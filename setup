@@ -5,6 +5,6 @@ if ("$CODESPACES" == "true") then
 
   # Git config
   git config --global alias.co checkout
-  git config --global alias.cob checkout -b
+  git config --global alias.cob 'checkout -b'
   git config --global alias.s status
 fi
