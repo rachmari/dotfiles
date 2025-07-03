@@ -11,3 +11,6 @@ alias seed-ccr='script/setup-copilot-code-review'
 
 # git
 lb='git branch --sort=-committerdate'
+
+# Go
+alias gofmt='go fmt ./...'
