@@ -8,6 +8,10 @@ alias killp='function _killp() { kill -9 $1; }; _killp'
 # codespace setup
 alias setup-ccr='script/setup-codespaces-copilot-api -w'
 alias seed-ccr='script/setup-copilot-code-review'
+alias ss='script/server'
+alias ssd='script/server --debug'
+alias ssw='script/server --skip-ui'
+alias ssv='VITE=1 script/server'
 
 # git
 lb='git branch --sort=-committerdate'
