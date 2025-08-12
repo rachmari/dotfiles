@@ -20,4 +20,4 @@ lb='git branch --sort=-committerdate'
 alias gofmt='go fmt ./...'
 
 # Error spelunking
-jq '.exception_detail[] | {value, type}' log/exceptions.log
+alias except="jq '.exception_detail[] | {value, type}' log/exceptions.log"
