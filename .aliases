@@ -6,8 +6,8 @@ alias lsportid='function _lsofport() { lsof -i :$1; }; _lsofport'
 alias killp='function _killp() { kill -9 $1; }; _killp'
 
 # codespace setup
-alias setup-ccr='script/setup-codespaces-copilot-api -w'
-alias seed-ccr='script/setup-copilot-code-review'
+alias setup-ccr='cd /workspaces/github && script/setup-codespace-copilot-code-review-agent -w'
+alias seed-ccr='cd /workspaces/github && script/enable-copilot-chat'
 alias ss='script/server'
 alias ssd='script/server --debug'
 alias ssw='script/server --skip-ui'
