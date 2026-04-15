@@ -12,6 +12,7 @@ alias ss='script/server'
 alias ssd='script/server --debug'
 alias ssw='script/server --skip-ui'
 alias ssv='VITE=1 script/server'
+alias start-ccr='SKIP_HOOKSHOT=1 make dev-start'
 
 # git
 lb='git branch --sort=-committerdate'
