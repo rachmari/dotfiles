@@ -26,4 +26,6 @@ alias except="jq '.exception_detail[] | {value, type}' log/exceptions.log"
 # Ruby
 
 alias brt='function _brt() { bin/rails test $1; }; _brt'
-alias brta='function _brta() { TEST_ALL_FEATURES=1 bin/rails test $1; }; _brta'
+alias brtf='function _brtf() { TEST_ALL_FEATURES=1 bin/rails test $1; }; _brtf'
+alias brte='function _brte() { MULTI_TENANT_ENTERPRISE=1 bin/rails test $1; }; _brte'
+alias brtc='function _brtc() { TEST_WITH_ALL_EMUS=1 bin/rails test $1; }; _brtc'
