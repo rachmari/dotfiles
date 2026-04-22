@@ -13,6 +13,8 @@ alias ssd='script/server --debug'
 alias ssw='script/server --skip-ui'
 alias ssv='VITE=1 script/server'
 alias start-ccr='SKIP_HOOKSHOT=1 make dev-start'
+alias lsccr='script/local-dev/docker-manage.sh list'
+alias rlccr='script/local-dev/send-callback.sh --latest'
 
 # git
 lb='git branch --sort=-committerdate'
